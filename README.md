@@ -1,2 +1,2 @@
 # CBuild_template
-Template for CBuild
+Template for program, that use CBuild as build system
