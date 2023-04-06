@@ -49,6 +49,8 @@ int main(int argc, char** argv, char** envp)
 	if (mode == CBuild::ERROR) exit(0xFF);
 	// If we need to rebuild
 	if (mode == CBuild::REBUILD) rebuild();
+	// Add base path
+	args.push_back("curr_path", std::string(std::filesystem::current_path().c_str()));
 	// Run main loop of CBuild (execute given toolchain / module and exit)
 	CBuild::loop(mode, &args);
 	// Safe exit without errors
