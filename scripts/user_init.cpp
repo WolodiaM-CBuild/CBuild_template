@@ -29,3 +29,7 @@ void init()
 {
 	// Build script here
 }
+void exit()
+{
+	// Some exit scripts
+}

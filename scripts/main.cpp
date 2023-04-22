@@ -53,6 +53,8 @@ int main(int argc, char** argv, char** envp)
 	args.push_back("curr_path", std::string(std::filesystem::current_path().c_str()));
 	// Run main loop of CBuild (execute given toolchain / module and exit)
 	CBuild::loop(mode, &args);
+	// Call of user exit
+	exit();
 	// Safe exit without errors
 	return 0;
 }
