@@ -23,4 +23,5 @@
  #ifndef _CBUILD_USER_INIT_HPP__
  #define _CBUILD_USER_INIT_HPP__
 void init();
+void exit();
 #endif // _CBUILD_USER_INIT_HPP__
